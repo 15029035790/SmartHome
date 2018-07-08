@@ -1,8 +1,6 @@
 package android.smart.home.smarthome;
 
 import android.app.Application;
-import android.content.Context;
-import android.os.Environment;
 
 import cn.bmob.v3.Bmob;
 
@@ -14,7 +12,7 @@ import cn.bmob.v3.Bmob;
 
 public class SmartHomeApplication extends Application {
     //Bmob云平台应用SmartHome Application ID
-    private static final String ApplicationID="16a97046f6b004b2bc3caa9d214b0557";
+    private static final String ApplicationID="ff7f40cbe47f06af8193ccc4a911bcc5";
 
     @Override
     public void onCreate(){
