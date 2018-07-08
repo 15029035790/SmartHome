@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cool_blue"
+    tools:context="esptouch.demo_activity.EsptouchDemoActivity">
+
+    <include
+        android:id="@+id/cd_headerLayout"
+        layout="@layout/include_action_bar" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wifi_ssid"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/lavender"/>
+        <TextView
+            android:id="@+id/tv_ssid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="tzeweddsd"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/lavender"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/lavender"
+        app:hintTextAppearance="@style/hintAppearance">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/wifi_password"
+            android:inputType="textPassword"
+            android:textColor="@color/lavender"
+            android:textSize="@dimen/text_size_large"
+            android:maxLines="1"
+            android:maxLength="16"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinnerTaskResultCountTitle"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/lavender"/>
+        
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        
+        <Spinner
+            android:id="@+id/spinnerTaskResultCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="16dp"
+        android:text="@string/stvConfirm"
+        android:textColor="@color/lavender"
+        android:textSize="@dimen/text_size_large"
+        app:sCornersRadius="8dp"
+        app:sUseSelector="true"
+        app:sSelectorPressedColor="@color/skyblue"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allen.library.SuperTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stv_data_stream"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stv_layout_height"
+    app:sLeftIconRes="@drawable/datastreams_icon"
+    app:sLeftIconWidth="32dp"
+    app:sLeftIconMarginLeft="10dp"
+    app:sLeftTextSize="@dimen/text_size_large"
+    app:sDividerLineHeight="1dp"
+    app:sDividerLineColor="@color/stv_divider"
+    app:sBackgroundDrawableRes="@drawable/device_item_background">
+</com.allen.library.SuperTextView>

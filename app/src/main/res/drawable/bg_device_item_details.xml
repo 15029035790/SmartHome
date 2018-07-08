@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:height="@dimen/stv_layout_height"/>
+    <gradient
+        android:endColor="#00fdb3"
+        android:startColor="#009efe"/>
+</shape>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cool_blue"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/register_actionbar"
+        layout="@layout/include_action_bar" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rgusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin"
+        android:layout_marginStart="@dimen/register_margin"
+        android:layout_marginEnd="@dimen/register_margin"
+        app:hintTextAppearance="@style/hintAppearance">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_account"
+            android:inputType="text"
+            android:imeOptions="actionNext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rgemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/register_margin"
+        android:layout_marginEnd="@dimen/register_margin"
+        app:hintTextAppearance="@style/hintAppearance">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_email"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_rgpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/register_margin"
+        android:layout_marginEnd="@dimen/register_margin"
+        app:passwordToggleEnabled="true"
+        app:hintTextAppearance="@style/hintAppearance"
+        app:passwordToggleTint="@color/light_text_gray">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_pwd"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbt_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:layout_margin="@dimen/register_margin"
+        android:text="@string/register_button"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/base_color_text_white"
+        app:sCornersRadius="@dimen/button_corner_radius"
+        app:sSelectorPressedColor="@color/light_blue"
+        app:sSelectorNormalColor="@color/deepskyblue"
+        app:sUseSelector="true" />
+
+</LinearLayout>

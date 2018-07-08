@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_user_header"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="100dp"
+        app:sLeftIconHeight="72dp"
+        app:sLeftIconWidth="72dp"
+        app:sLeftIconMarginLeft="20dp"
+        app:sLeftIconShowCircle="true"
+        app:sLeftIconRes="@drawable/default_avatar_boy"
+        app:sCenterTopTextSize="@dimen/text_size_large"
+        app:sCenterViewGravity="left_center"
+        app:sCenterBottomTextSize="@dimen/text_size_medium"
+        app:sCenterBottomTextString="完善资料"
+        app:sUseRipple="true"
+        app:sBackgroundDrawableRes="@drawable/bg_user_selector">
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_choose_mode"
+        android:layout_below="@+id/stv_user_header"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="模式选择"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp"
+        app:sBottomDividerLineMarginLR="12dp"
+        app:sDividerLineHeight="0.5dp"
+        app:sDividerLineColor="@color/gray" />
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_security"
+        android:layout_below="@+id/stv_choose_mode"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="帐号与安全"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_about"
+        android:layout_below="@+id/stv_security"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="关于"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp"
+        app:sBottomDividerLineMarginLR="12dp"
+        app:sDividerLineHeight="0.5dp"
+        app:sDividerLineColor="@color/gray" />
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_helper"
+        android:layout_below="@+id/stv_about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="帮助与反馈"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp" />
+
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:text="@string/logout"
+        android:textColor="@color/base_color_text_white"
+        app:sUseSelector="true"
+        app:sSelectorNormalColor="@color/lightseagreen"
+        app:sSelectorPressedColor="@color/light_blue"
+        app:sCornersRadius="4dp"
+        />
+
+
+</RelativeLayout>

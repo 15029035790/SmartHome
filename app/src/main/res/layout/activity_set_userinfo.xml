@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/set_userInfo_headerLayout"
+        layout="@layout/include_action_bar"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_set_avatar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="80dp"
+        app:sRightIconHeight="64dp"
+        app:sRightIconWidth="64dp"
+        app:sRightIconMarginRight="20dp"
+        app:sRightIconShowCircle="true"
+        app:sRightIconRes="@drawable/default_avatar_boy"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sLeftTextString="头像"
+        app:sUseRipple="true">
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_set_sex"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="性别"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightTextString="尚未选择"
+        app:sRightTextSize="@dimen/text_size_medium"
+        app:sRightTextColor="@color/gray"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp"
+        app:sBottomDividerLineMarginLR="12dp"
+        app:sDividerLineHeight="0.5dp"
+        app:sDividerLineColor="@color/gray" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_set_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:sLeftTextString="生日"
+        app:sLeftViewMarginLeft="12dp"
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sRightTextString="尚未填写"
+        app:sRightTextSize="@dimen/text_size_medium"
+        app:sRightTextColor="@color/gray"
+        app:sRightIconRes="@drawable/right_arrow"
+        app:sRightIconHeight="24dp"
+        app:sRightIconWidth="24dp" />
+</LinearLayout>

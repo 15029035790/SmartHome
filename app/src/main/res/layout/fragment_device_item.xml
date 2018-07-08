@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.allen.library.SuperTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/device_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stv_double_layout_height"
+    app:sLeftTopTextSize="@dimen/text_size_large"
+    app:sLeftBottomTextString="创建时间 ："
+    app:sLeftBottomTextSize="@dimen/text_size_large"
+    app:sLeftViewGravity="left_center"
+    app:sCenterTopTextString=" "
+    app:sCenterTopTextSize="@dimen/text_size_large"
+    app:sCenterBottomTextSize="@dimen/text_size_medium"
+    app:sCenterViewGravity="left_center"
+    app:sDividerLineHeight="1dp"
+    app:sDividerLineColor="@color/stv_divider"
+    app:sBackgroundDrawableRes="@drawable/device_item_background"
+    app:sUseRipple="true">
+</com.allen.library.SuperTextView>

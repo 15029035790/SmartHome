@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cool_blue">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_show_temp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:sCenterBottomTextSize="@dimen/text_size_medium"
+        app:sCenterViewGravity="left_center"
+        app:sCenterTopTextSize="@dimen/text_size_medium"
+        app:sLeftBottomTextSize="@dimen/text_size_medium"
+        app:sLeftBottomTextString="时间："
+        app:sLeftIconRes="@drawable/temperature"
+        app:sLeftIconWidth="48dp"
+        app:sLeftIconHeight="48dp"
+        app:sLeftTopTextSize="@dimen/text_size_medium"
+        app:sLeftTopTextString="温度："
+        app:sLeftViewGravity="left_center"
+        app:sShapeCornersRadius="20dp"
+        app:sShapeSelectorPressedColor="@color/light_blue"
+        app:sShapeSelectorNormalColor="@color/deepskyblue"
+        app:sUseShape="true" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_get_data"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:sLeftTopTextString="起始时间："
+        app:sLeftTopTextSize="@dimen/text_size_medium"
+        app:sLeftBottomTextString="结束时间："
+        app:sLeftBottomTextSize="@dimen/text_size_medium"
+        app:sLeftViewGravity="left_center"
+        app:sCenterViewGravity="left_center"
+        app:sCenterTopTextSize="@dimen/text_size_medium"
+        app:sCenterBottomTextSize="@dimen/text_size_medium"
+        app:sCenterTopTextString="2017-11-13 23:16"
+        app:sCenterTopTextColor="@color/transparent"
+        app:sCenterBottomTextString="2017-11-13 23:16"
+        app:sCenterBottomTextColor="@color/transparent"
+        app:sShapeCornersRadius="12dp"
+        app:sUseShape="true"
+        app:sRightViewType="switchBtn"
+        app:sSwitchIsChecked="true"
+        app:sSwitchMinWidth="54dp"
+        app:sThumbResource="@drawable/thumb"
+        app:sTrackResource="@drawable/track"
+        app:sShapeSelectorPressedColor="@color/light_blue"
+        app:sShapeSelectorNormalColor="@color/deepskyblue"
+        app:sUseRipple="true" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbt_query"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:text="@string/query"
+        android:textColor="@color/lavender"
+        android:textSize="@dimen/text_size_large"
+        app:sUseSelector="true"
+        app:sCornersRadius="32dp"
+        android:elevation="5dp"
+        app:sSelectorNormalColor="@color/deepskyblue"
+        app:sSelectorPressedColor="@color/light_blue"/>
+
+    <android.smart.home.smarthome.widget.LineChartInViewPager
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

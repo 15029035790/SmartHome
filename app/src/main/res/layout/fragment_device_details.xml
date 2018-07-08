@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:sLeftIconRes="@drawable/temperature"
+        app:sLeftIconWidth="32dp"
+        app:sLeftTopTextSize="@dimen/text_size_large"
+        app:sLeftBottomTextString="创建时间："
+        app:sLeftBottomTextSize="@dimen/text_size_medium"
+        app:sLeftViewGravity="left_center"
+        app:sRightBottomTextSize="@dimen/text_size_medium"
+        app:sRightTopTextString="    "
+        app:sRightViewGravity="center"
+        app:sDividerLineHeight="1dp"
+        app:sDividerLineColor="@color/stv_divider"
+        app:sRightViewType="switchBtn"
+        app:sSwitchMinWidth="48dp"
+        app:sThumbResource="@drawable/thumb"
+        app:sTrackResource="@drawable/track"
+        app:sBackgroundDrawableRes="@drawable/bg_device_item_details"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_deviceID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_layout_height"
+        app:sLeftTextString="设备 ID ："
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sCenterTextSize="@dimen/text_size_large"
+        app:sDividerLineHeight="1dp"
+        app:sDividerLineColor="@color/stv_divider"
+        app:sBackgroundDrawableRes="@drawable/bg_device_item_details"/>
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_auth_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_layout_height"
+        app:sLeftTextString="设备编号 ："
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sCenterTextSize="@dimen/text_size_large"
+        app:sDividerLineHeight="1dp"
+        app:sDividerLineColor="@color/stv_divider"
+        app:sBackgroundDrawableRes="@drawable/bg_device_item_details"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_layout_height"
+        app:sLeftTextString="接入方式 ："
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sCenterTextSize="@dimen/text_size_large"
+        app:sDividerLineHeight="1dp"
+        app:sDividerLineColor="@color/stv_divider"
+        app:sBackgroundDrawableRes="@drawable/bg_device_item_details"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_private"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_layout_height"
+        app:sLeftTextString="设备数据权限 ："
+        app:sLeftTextSize="@dimen/text_size_large"
+        app:sCenterTextSize="@dimen/text_size_large"
+        app:sBackgroundDrawableRes="@drawable/bg_device_item_details"/>
+</LinearLayout>
+
